@@ -1,31 +1,9 @@
 
 * {
 box-sizing: border-box;
+/* margin: 0;
+padding: 0; */
 
-}
-html {
-    font-size: 62.5%
-}
-header {
-    max-width: 100%;
-    /* padding: 1% 0; */
-    display: flex;
-    align-items: baseline;
-    justify-content: space-around;
-    background-color:#7FACA4;
-    /* border: 1px solid black; */
-    margin-top: 0%;
-}
-header h3 {
-    color:#0D3C60;
-    letter-spacing: 1.35px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 2.1rem;
-    /* display: flex;
-    align-items: baseline; */
-}
-header span {
-    color: #F2F2F2;
 }
 .container {
     /* width: 100%; */
@@ -33,64 +11,114 @@ header span {
     font-size: 1.6rem;
     font-family: "Titillium Web", sans-serif;
 }
-
+html {
+    font-size: 62.5%
+}
 body {
-    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 100, 0.5)) ,url(../img1.jpg);
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 100, 0.5)), url(../img1.jpg);
     height: 100vh;
     background-size: cover;
     background-position: center;
+}
+
+header {
+    max-width: 100%;
+    /* padding: 1% 0; */
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    background-color:#0D3C60;
+    margin-top: 0%;
+}
+header h3 {
+    color:#fc0d49;
+    letter-spacing: 1.35px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2.1rem;
+    letter-spacing: 0.9rem;
+    /* border: 1px solid red; */
+    padding-right: 8%;
+    
+}
+header span {
+    color: whitesmoke;
+    border-right: 2px solid whitesmoke;
+    padding-right: 5%;
+   margin-right: 2%;
 }
 header nav {
     width: 50%;
     display: flex;
     justify-content: space-around;
     /* border: 1px solid red; */
-    
-  
 }
-
 header nav a {
     text-decoration: none;
-    color: white;
+    color:whitesmoke;
     padding: 2%;
     margin-left: 8%;
-    font-size: 1.8rem;
-    
+    font-size: 1.8rem;   
+}
+
+nav a:hover {
+    font-size: 2.5rem;
+    border-bottom: 2px solid #fc0d49;
+}
+header nav .home-page {
+    border-bottom: 2px solid #fc0d49;
 }
 
 .main-content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
-    justify-content: center;
+    align-content: space-between;
+    /* justify-content: center; */
     /* border: 2px solid red; */
-    width: 70%;
-    padding: 10% 0%;
-    margin-top: 2%;
+    width: 95%;
+    padding: 6% 0%;
     color:white;
-    text-align: center;
-    margin-left: 15%;
+    /* text-align: center; */
+    /* margin-left: 15%; */
+    
 }
 .main-content h1 {
     letter-spacing: 0.7rem;
+    text-shadow: 3px 3px black;
+    margin-bottom: 5%;
 }
 .main-content p {
 font-size: 2.5rem;
 font-family: 'Courier New', Courier, monospace;
 line-height: 1.6;
+color: white;
+text-align: justify;
+/* text-shadow: 1px 1px black; */
+/* background: rgb(246, 248, 250); */
 }
-.main-content .btn {
+.btn1 {
+    border: 1px solid whitesmoke;
+    padding: 1.5% 5%;
+    color: whitesmoke;
+    font-size: 2.2rem;
     text-decoration: none;
-    border: 1px solid navy;
-    border-radius: 2%;
-    color:white;
-    cursor: pointer;
-    font-size: 2.5rem;
-    margin: 7% 30% 1% 30%;
-    padding: 2%;
-    background: #7DCADA;
+    background: rgb(238, 59, 103);
+    margin-right: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
-.main-content .btn:hover {
-    background: white;
-    color:#0D3C60;
+.btn2 {
+    border: 1px solid whitesmoke;
+    padding: 1.5% 5%;
+    color: rgb(7, 7, 7);
+    font-size: 2.2rem;
+    text-decoration: none;
+   background: #cecbcb;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   
 }
+.btn2:hover {
+    background: rgb(230, 69, 109);
+}
+
+
+/* linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 100, 0.5)) , */
